@@ -2,11 +2,10 @@ pipeline {
   agent any
   stages {
     stage('build') {
-	wrap([$class: 'Xvfb']) {
+      node {
         sh '''qmake  ui-qt/Detector.pro -spec linux-g++
 make'''
-      
-	  }
+      }
     }
   }
 }
