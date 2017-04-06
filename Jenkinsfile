@@ -3,8 +3,11 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh '''qmake  ui-qt/Detector.pro -spec linux-g++
+	  node {
+	     sh '''qmake  ui-qt/Detector.pro -spec linux-g++
 make'''
+	  }
+     
       }
     }
   }
