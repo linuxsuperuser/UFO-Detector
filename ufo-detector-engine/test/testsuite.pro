@@ -6,7 +6,6 @@ TEMPLATE = subdirs
 
 SUBDIRS = \
     testConfig \
-    testRecorder \
     testActualDetector \
     testVideoCodecSupportInfo \
     testVideoBuffer \
