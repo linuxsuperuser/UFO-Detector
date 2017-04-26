@@ -33,8 +33,6 @@ SOURCES += testrecorder.cpp \
     ../../videocodecsupportinfo.cpp \
     ../../recorder.cpp \
     ../../camerainfo.cpp \
-    ../../videobuffer.cpp
-
 HEADERS += ../../recorder.h \
     ../../config.h \
     ../../videocodecsupportinfo.h \
