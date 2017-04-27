@@ -1,5 +1,5 @@
-QMAKE_CXXFLAGS += --coverage
-QMAKE_LFLAGS += --coverage
+QMAKE_CXXFLAGS += --coverage -xml -o testResult.xml
+QMAKE_LFLAGS += --coverage -xml -o testResult.xml
 
 
 TEMPLATE = subdirs
