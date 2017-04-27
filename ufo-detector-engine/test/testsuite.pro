@@ -15,6 +15,8 @@ SUBDIRS = \
     
 skip {
       SUBDIRS -=  testCameraInfo
+      SUBDIRS -=  testRecorder
+
     }
 
 LIBS += -lgcov
