@@ -5,13 +5,16 @@ QMAKE_LFLAGS += --coverage
 TEMPLATE = subdirs
 
 SUBDIRS = \
+    skip {
+        testCameraInfo \
+    }
     testConfig \
-    testCameraInfo \
     testRecorder \
     testActualDetector \
     testVideoCodecSupportInfo \
     testVideoBuffer \
     testDataManager
+    
 
 LIBS += -lgcov
 
